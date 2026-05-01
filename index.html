@@ -2817,196 +2817,566 @@
   </div>
 
   <!-- ═══ BLOG SECTION ═══ -->
-  <div class="section-header">
-    <h2>Legal Blog</h2>
-    <div class="section-line"></div>
-  </div>
-  <div id="blog-grid">
-
-    <a class="blog-card" href="https://gonzaleslawoffices.com/blog/who-pays-for-damages-in-a-california-multi-car-accident/" target="_blank" rel="noopener">
-      <div class="blog-cat">Car Accident</div>
-      <div class="blog-title">Who Pays for Damages in a California Multi-Car Accident?</div>
-      <div class="blog-excerpt">You've been rear-ended, but so has the car in front of you. In a pile-up, California's pure comparative fault rules determine how liability is split between every driver involved.</div>
-      <div class="blog-meta"><span class="blog-date">Jan 23, 2026</span><span class="blog-read">Read Article →</span></div>
-    </a>
-
-    <a class="blog-card" href="https://gonzaleslawoffices.com/blog/most-dangerous-roads-and-intersections-in-san-bernardino/" target="_blank" rel="noopener">
-      <div class="blog-cat">Car Accident</div>
-      <div class="blog-title">Most Dangerous Roads & Intersections in San Bernardino</div>
-      <div class="blog-excerpt">Certain corridors in San Bernardino see disproportionate crash rates. Know which roads require extra caution — and what to do if you're hit on one of them.</div>
-      <div class="blog-meta"><span class="blog-date">Jan 23, 2026</span><span class="blog-read">Read Article →</span></div>
-    </a>
-
-    <a class="blog-card" href="https://gonzaleslawoffices.com/blog/most-dangerous-roads-and-intersections-in-fontana/" target="_blank" rel="noopener">
-      <div class="blog-cat">Car Accident</div>
-      <div class="blog-title">Most Dangerous Roads & Intersections in Fontana</div>
-      <div class="blog-excerpt">You're driving your usual route when someone blows through a red light. Heart pounding. These are Fontana's highest-risk roads and what your legal options are after a crash.</div>
-      <div class="blog-meta"><span class="blog-date">Jan 16, 2026</span><span class="blog-read">Read Article →</span></div>
-    </a>
-
-    <a class="blog-card" href="https://gonzaleslawoffices.com/blog/i-15-and-highway-2-dangers/" target="_blank" rel="noopener">
-      <div class="blog-cat">Car Accident</div>
-      <div class="blog-title">I-15 & Highway 2 Dangers: Establishing Liability for Accidents</div>
-      <div class="blog-excerpt">Driving the I-15 or Highway 2 shouldn't feel like taking your life into your hands. Here's how liability is established when crashes happen on these dangerous corridors.</div>
-      <div class="blog-meta"><span class="blog-date">Jan 16, 2026</span><span class="blog-read">Read Article →</span></div>
-    </a>
-
-    <a class="blog-card" href="https://gonzaleslawoffices.com/blog/how-weather-conditions-impact-liability-in-auto-accidents-in-california/" target="_blank" rel="noopener">
-      <div class="blog-cat">Car Accident</div>
-      <div class="blog-title">How Weather Conditions Impact Liability in Auto Accidents in California</div>
-      <div class="blog-excerpt">Getting caught in a California rainstorm or fog bank is stressful enough — but does bad weather let a negligent driver off the hook? California law says no.</div>
-      <div class="blog-meta"><span class="blog-date">Jan 23, 2026</span><span class="blog-read">Read Article →</span></div>
-    </a>
-
-    <a class="blog-card" href="https://gonzaleslawoffices.com/blog/what-to-do-after-a-california-car-accident/" target="_blank" rel="noopener">
-      <div class="blog-cat">Car Accident</div>
-      <div class="blog-title">What to Do After a Car Accident in California</div>
-      <div class="blog-excerpt">You're shaking. Your heart's racing. And now you're standing on the side of the road. Here's a step-by-step guide to protecting your health and your legal rights.</div>
-      <div class="blog-meta"><span class="blog-date">Jan 23, 2026</span><span class="blog-read">Read Article →</span></div>
-    </a>
-
-    <a class="blog-card" href="https://gonzaleslawoffices.com/blog/average-shoulder-injury-settlement-amounts-in-california/" target="_blank" rel="noopener">
-      <div class="blog-cat">Personal Injury</div>
-      <div class="blog-title">What Is the Average Shoulder Injury Settlement in California?</div>
-      <div class="blog-excerpt">Shoulder injuries are among the most painful and disabling results of car accidents. Learn what settlements typically look like and what factors drive the value of your claim.</div>
-      <div class="blog-meta"><span class="blog-date">Jan 2, 2026</span><span class="blog-read">Read Article →</span></div>
-    </a>
-
-    <a class="blog-card" href="https://gonzaleslawoffices.com/blog/average-knee-injury-settlement-amounts-in-california/" target="_blank" rel="noopener">
-      <div class="blog-cat">Personal Injury</div>
-      <div class="blog-title">What Is the Average Knee Injury Settlement in California?</div>
-      <div class="blog-excerpt">A knee injury can be incredibly painful and debilitating. If someone else caused your injury, California law entitles you to full compensation — here's what that looks like.</div>
-      <div class="blog-meta"><span class="blog-date">Jan 2, 2026</span><span class="blog-read">Read Article →</span></div>
-    </a>
-
-  </div>
-
-  <div style="width:100%;max-width:520px;padding:12px 16px 0;text-align:center;">
-    <a href="https://gonzaleslawoffices.com/blog/" target="_blank" rel="noopener" id="blog-more-btn">
-      View All Articles →
-    </a>
-  </div>
-
   <style>
-    #blog-grid {
+    /* ── Blog Section ── */
+    #blog-section {
       width: 100%;
       max-width: 520px;
       padding: 0 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
     }
-    .blog-card {
+
+    /* Featured post */
+    #blog-featured {
       display: block;
-      background: linear-gradient(145deg, rgba(13,31,60,0.55), rgba(6,12,30,0.50));
-      border: 1px solid rgba(255,255,255,0.07);
-      border-left: 3px solid var(--red);
-      border-radius: 16px;
-      padding: 16px 18px;
       text-decoration: none;
       color: inherit;
-      transition: all 0.35s cubic-bezier(0.25,0.46,0.45,0.94);
+      background: linear-gradient(145deg, rgba(212,43,43,0.13), rgba(6,12,30,0.7));
+      border: 1px solid rgba(212,43,43,0.28);
+      border-radius: 18px;
+      padding: 20px 20px 18px;
+      margin-bottom: 14px;
       position: relative;
       overflow: hidden;
+      transition: all 0.35s ease;
     }
-    .blog-card::after {
+    #blog-featured::before {
+      content: 'FEATURED';
+      position: absolute;
+      top: 14px; right: 14px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 8.5px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #d42b2b;
+      background: rgba(212,43,43,0.12);
+      border: 1px solid rgba(212,43,43,0.3);
+      border-radius: 100px;
+      padding: 3px 8px;
+    }
+    #blog-featured::after {
       content: '';
       position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 60%);
-      pointer-events: none;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #d42b2b, #c8a84b, #d42b2b);
+    }
+    #blog-featured:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px rgba(212,43,43,0.18);
+      border-color: rgba(212,43,43,0.45);
+    }
+    #blog-featured .blog-cat { margin-bottom: 10px; }
+    #blog-featured .blog-title {
+      font-size: 17px !important;
+      margin-bottom: 10px;
+    }
+    #blog-featured .blog-excerpt { margin-bottom: 14px; }
+
+    /* Filter tabs */
+    #blog-filters {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .blog-filter-btn {
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 6px 13px;
+      border-radius: 100px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.04);
+      color: rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+      user-select: none;
+    }
+    .blog-filter-btn:hover {
+      color: rgba(255,255,255,0.85);
+      border-color: rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.07);
+    }
+    .blog-filter-btn.active {
+      color: #fff;
+      background: rgba(212,43,43,0.18);
+      border-color: rgba(212,43,43,0.45);
+    }
+    .blog-filter-btn[data-cat="Motorcycle Accidents"].active {
+      background: rgba(200,168,75,0.15);
+      border-color: rgba(200,168,75,0.4);
+    }
+    .blog-filter-btn[data-cat="Personal Injury"].active {
+      background: rgba(29,155,240,0.15);
+      border-color: rgba(29,155,240,0.4);
+    }
+    .blog-filter-btn[data-cat="Wrongful Death"].active {
+      background: rgba(150,50,200,0.15);
+      border-color: rgba(150,50,200,0.4);
+    }
+
+    /* Post list */
+    #blog-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .blog-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      text-decoration: none;
+      color: inherit;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 14px;
+      padding: 14px 16px;
+      transition: all 0.3s ease;
+      position: relative;
     }
     .blog-card:hover {
-      border-color: rgba(212,43,43,0.4);
-      border-left-color: #d42b2b;
-      background: linear-gradient(145deg, rgba(212,43,43,0.08), rgba(6,12,30,0.65));
-      transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba(212,43,43,0.12);
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(212,43,43,0.3);
+      transform: translateX(3px);
+      box-shadow: -3px 0 0 rgba(212,43,43,0.5), 4px 0 20px rgba(212,43,43,0.08);
     }
+    .blog-card.hidden { display: none; }
+    .blog-card-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .icon-bg-red    { background: rgba(212,43,43,0.13); }
+    .icon-bg-gold   { background: rgba(200,168,75,0.13); }
+    .icon-bg-blue   { background: rgba(29,155,240,0.13); }
+    .icon-bg-purple { background: rgba(150,50,200,0.13); }
+    .blog-card-body { flex: 1; min-width: 0; }
     .blog-cat {
       display: inline-block;
       font-family: 'Poppins', sans-serif;
-      font-size: 9.5px;
+      font-size: 9px;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.3px;
       text-transform: uppercase;
-      color: #ff8a8a;
-      background: rgba(212,43,43,0.12);
-      border: 1px solid rgba(212,43,43,0.25);
       border-radius: 100px;
-      padding: 3px 9px;
-      margin-bottom: 9px;
+      padding: 2px 8px;
+      margin-bottom: 6px;
     }
-    .blog-card[href*="shoulder"] .blog-cat,
-    .blog-card[href*="knee"] .blog-cat {
-      color: #d4aa4a;
-      background: rgba(200,168,75,0.10);
-      border-color: rgba(200,168,75,0.22);
-    }
+    .cat-car    { color: #ff8a8a; background: rgba(212,43,43,0.12); border: 1px solid rgba(212,43,43,0.22); }
+    .cat-injury { color: #5bc4ff; background: rgba(29,155,240,0.12); border: 1px solid rgba(29,155,240,0.22); }
+    .cat-moto   { color: #d4aa4a; background: rgba(200,168,75,0.12); border: 1px solid rgba(200,168,75,0.22); }
+    .cat-death  { color: #c084fc; background: rgba(150,50,200,0.12); border: 1px solid rgba(150,50,200,0.22); }
     .blog-title {
       font-family: 'Playfair Display', serif;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
       color: #fff;
       line-height: 1.35;
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
     .blog-excerpt {
       font-family: 'Poppins', sans-serif;
-      font-size: 12px;
-      color: rgba(255,255,255,0.48);
-      line-height: 1.65;
-      margin-bottom: 12px;
+      font-size: 11.5px;
+      color: rgba(255,255,255,0.42);
+      line-height: 1.6;
+      margin-bottom: 8px;
     }
     .blog-meta {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 8px;
     }
     .blog-date {
       font-family: 'Poppins', sans-serif;
-      font-size: 10.5px;
-      color: rgba(255,255,255,0.28);
+      font-size: 10px;
+      color: rgba(255,255,255,0.25);
       font-weight: 500;
     }
     .blog-read {
       font-family: 'Poppins', sans-serif;
       font-size: 11px;
       font-weight: 700;
-      color: #d42b2b;
-      letter-spacing: 0.2px;
-      transition: color 0.2s, letter-spacing 0.2s;
+      color: rgba(212,43,43,0.8);
+      transition: color 0.2s;
     }
-    .blog-card:hover .blog-read {
-      color: #ff6060;
-      letter-spacing: 0.5px;
+    .blog-card:hover .blog-read { color: #ff6060; }
+
+    /* Show more */
+    #blog-show-more {
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 12px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    #blog-show-more:hover {
+      background: rgba(255,255,255,0.06);
+      color: rgba(255,255,255,0.8);
+      border-color: rgba(212,43,43,0.3);
     }
     #blog-more-btn {
-      display: inline-block;
+      display: block;
+      text-align: center;
       font-family: 'Poppins', sans-serif;
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
-      color: rgba(255,255,255,0.55);
+      color: rgba(255,255,255,0.45);
       text-decoration: none;
       padding: 11px 24px;
-      border: 1px solid rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.1);
       border-radius: 100px;
       transition: all 0.3s ease;
-      margin-bottom: 20px;
+      margin-top: 12px;
     }
     #blog-more-btn:hover {
       color: #fff;
       border-color: rgba(212,43,43,0.4);
       background: rgba(212,43,43,0.08);
     }
+    #blog-post-count {
+      font-family: 'Poppins', sans-serif;
+      font-size: 10.5px;
+      color: rgba(255,255,255,0.25);
+      text-align: right;
+      margin-bottom: 10px;
+      padding-right: 2px;
+    }
     @media (max-width: 480px) {
-      #blog-grid { padding: 0 12px !important; }
-      .blog-card { padding: 13px 14px !important; border-radius: 13px !important; }
-      .blog-title { font-size: 14px !important; }
-      .blog-excerpt { font-size: 11.5px !important; }
+      #blog-section { padding: 0 12px !important; }
+      .blog-title { font-size: 13.5px !important; }
+      .blog-excerpt { font-size: 11px !important; }
+      #blog-featured .blog-title { font-size: 15px !important; }
     }
   </style>
+
+  <div class="section-header">
+    <h2>Legal Blog</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div id="blog-section">
+
+    <!-- Featured post -->
+    <a id="blog-featured" href="https://gonzaleslawoffices.com/blog/what-to-do-after-a-california-car-accident/" target="_blank" rel="noopener">
+      <div class="blog-cat cat-car">Car Accident</div>
+      <div class="blog-title">What to Do After a Car Accident in California</div>
+      <div class="blog-excerpt">You're shaking. Your heart's racing. You're standing on the side of the road not knowing what to do. This step-by-step guide protects your health and your legal rights from the moment of impact.</div>
+      <div class="blog-meta">
+        <span class="blog-date">📅 Jan 23, 2026 · By Mark Gonzales, Esq.</span>
+        <span class="blog-read">Read →</span>
+      </div>
+    </a>
+
+    <!-- Category filters -->
+    <div id="blog-filters">
+      <button class="blog-filter-btn active" data-cat="All">All (22)</button>
+      <button class="blog-filter-btn" data-cat="Car Accident">🚗 Car Accident</button>
+      <button class="blog-filter-btn" data-cat="Personal Injury">🩺 Personal Injury</button>
+      <button class="blog-filter-btn" data-cat="Motorcycle Accidents">🏍️ Motorcycle</button>
+      <button class="blog-filter-btn" data-cat="Wrongful Death">⚖️ Wrongful Death</button>
+    </div>
+
+    <div id="blog-post-count">Showing <span id="blog-visible-count">6</span> of 21 articles</div>
+
+    <!-- Post list -->
+    <div id="blog-list">
+
+      <a class="blog-card" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/who-pays-for-damages-in-a-california-multi-car-accident/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">🚗</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">Who Pays for Damages in a California Multi-Car Accident?</div>
+          <div class="blog-excerpt">In a pile-up, California's pure comparative fault rules determine how liability splits between every driver involved.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 23, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/most-dangerous-roads-and-intersections-in-san-bernardino/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">🛣️</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">Most Dangerous Roads & Intersections in San Bernardino</div>
+          <div class="blog-excerpt">Certain corridors see disproportionate crash rates. Know which roads demand extra caution and your legal options after a crash.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 23, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/most-dangerous-roads-and-intersections-in-fontana/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">🚦</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">Most Dangerous Roads & Intersections in Fontana</div>
+          <div class="blog-excerpt">These are Fontana's highest-risk roads and what your legal options are after someone blows through a red light.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 16, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/i-15-and-highway-2-dangers/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">🛤️</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">I-15 & Highway 2 Dangers: Establishing Liability for Accidents</div>
+          <div class="blog-excerpt">How liability is established when crashes happen on Southern California's most dangerous corridors.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 16, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/how-weather-conditions-impact-liability-in-auto-accidents-in-california/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">🌧️</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">How Weather Conditions Impact Liability in Auto Accidents</div>
+          <div class="blog-excerpt">Does bad weather let a negligent driver off the hook? California law says no — here's why.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 23, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/average-car-accident-settlement-in-california/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">💰</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">Average Car Accident Settlement in California</div>
+          <div class="blog-excerpt">Settlement amounts vary significantly by case. Learn what factors drive higher payouts and what to expect from your claim.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 23, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card hidden" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/californias-new-auto-insurance-limits/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">📋</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">California's New Auto Insurance Limits (2026)</div>
+          <div class="blog-excerpt">California raised its minimum auto insurance requirements. What the new limits mean for your accident claim.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 23, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card hidden" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/california-car-accident-statistics/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">📊</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">California Car Accident Statistics (2026 Updated)</div>
+          <div class="blog-excerpt">Car accidents happen often in California — and the statistics reveal a sobering reality about road safety statewide.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 16, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card hidden" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/what-to-do-after-a-car-accident-in-fontana/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">📍</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">What To Do After a Car Accident in Fontana</div>
+          <div class="blog-excerpt">Knowing what to do after a Fontana crash isn't always clear. This local guide walks you through every step.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 8, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card hidden" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/riverside-car-accident-statistics/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">📊</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">Riverside Car Accident Statistics (2026 Updated)</div>
+          <div class="blog-excerpt">In 2022, Riverside recorded approximately 1,764 people injured or killed in traffic accidents. Updated data inside.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 8, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card hidden" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/san-bernardino-car-accident-statistics/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">📊</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">San Bernardino Car Accident Statistics (2026 Updated)</div>
+          <div class="blog-excerpt">San Bernardino County sees approximately 14,615 people injured in traffic accidents annually. See the full breakdown.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 16, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card hidden" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/fontana-car-accident-statistics/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">📊</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">Fontana Car Accident Statistics (2026 Updated)</div>
+          <div class="blog-excerpt">Car accidents in Fontana are a serious concern for drivers, passengers, and pedestrians. The latest data revealed.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 16, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card hidden" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/are-uber-drivers-liable-for-san-bernardino-accidents/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">🚘</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">Are Uber Drivers Liable for San Bernardino Accidents?</div>
+          <div class="blog-excerpt">After a rideshare crash, victims often ask who's responsible. The answer depends on when in the ride the accident occurred.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 8, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card hidden" data-cat="Car Accident" href="https://gonzaleslawoffices.com/blog/reasons-to-get-a-lawyer-after-car-accident-in-fontana-california/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-red">⚖️</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-car">Car Accident</span>
+          <div class="blog-title">Reasons To Get a Lawyer After a Car Accident in Fontana</div>
+          <div class="blog-excerpt">Insurance companies have lawyers working for them. You should too. Here are the top reasons to hire an attorney after a crash.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 16, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <!-- Personal Injury -->
+      <a class="blog-card hidden" data-cat="Personal Injury" href="https://gonzaleslawoffices.com/blog/average-shoulder-injury-settlement-amounts-in-california/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-blue">🩺</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-injury">Personal Injury</span>
+          <div class="blog-title">Average Shoulder Injury Settlement in California</div>
+          <div class="blog-excerpt">Shoulder injuries are among the most painful results of accidents. Learn what settlements look like and what drives claim value.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 2, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card hidden" data-cat="Personal Injury" href="https://gonzaleslawoffices.com/blog/average-knee-injury-settlement-amounts-in-california/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-blue">🦵</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-injury">Personal Injury</span>
+          <div class="blog-title">Average Knee Injury Settlement in California</div>
+          <div class="blog-excerpt">A knee injury can be incredibly painful and debilitating. If someone else caused it, you're entitled to full compensation.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 2, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card hidden" data-cat="Personal Injury" href="https://gonzaleslawoffices.com/blog/average-herniated-disc-settlement-in-california/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-blue">🫀</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-injury">Personal Injury</span>
+          <div class="blog-title">Average Herniated Disc Settlement in California</div>
+          <div class="blog-excerpt">A herniated disc is a painful, debilitating back injury. If you have one, your settlement value depends on several key factors.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 2, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card hidden" data-cat="Personal Injury" href="https://gonzaleslawoffices.com/blog/what-is-the-most-common-long-lasting-effect-of-a-san-bernardino-brain-injury/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-blue">🧠</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-injury">Personal Injury</span>
+          <div class="blog-title">Most Common Long-Lasting Effects of a Brain Injury in San Bernardino</div>
+          <div class="blog-excerpt">Cognitive impairment is the most common long-lasting effect of a TBI. Here's what victims and families need to know.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 16, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <a class="blog-card hidden" data-cat="Personal Injury" href="https://gonzaleslawoffices.com/blog/what-are-the-chances-of-winning-a-personal-injury-lawsuit-in-fontana-california/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-blue">⚖️</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-injury">Personal Injury</span>
+          <div class="blog-title">Chances of Winning a Personal Injury Lawsuit in Fontana</div>
+          <div class="blog-excerpt">The odds of winning depend on evidence, liability, and legal representation. Here's what the numbers actually say.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 16, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <!-- Motorcycle -->
+      <a class="blog-card hidden" data-cat="Motorcycle Accidents" href="https://gonzaleslawoffices.com/blog/most-common-motorcycle-accident-injuries-in-california/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-gold">🏍️</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-moto">Motorcycle Accidents</span>
+          <div class="blog-title">Most Common Motorcycle Accident Injuries in California</div>
+          <div class="blog-excerpt">Broken bones, road rash, TBIs — motorcycle crashes cause devastating injuries. Know your rights and what compensation looks like.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 2, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+      <!-- Wrongful Death -->
+      <a class="blog-card hidden" data-cat="Wrongful Death" href="https://gonzaleslawoffices.com/blog/what-is-the-average-wrongful-death-settlement-in-san-bernardino/" target="_blank" rel="noopener">
+        <div class="blog-card-icon icon-bg-purple">💜</div>
+        <div class="blog-card-body">
+          <span class="blog-cat cat-death">Wrongful Death</span>
+          <div class="blog-title">Average Wrongful Death Settlement in San Bernardino</div>
+          <div class="blog-excerpt">Losing a loved one is never easy, especially when it's due to someone else's negligence. Here's what families are owed.</div>
+          <div class="blog-meta"><span class="blog-date">Jan 16, 2026</span><span class="blog-read">Read →</span></div>
+        </div>
+      </a>
+
+    </div><!-- /blog-list -->
+
+    <button id="blog-show-more">Show More Articles ↓</button>
+    <a id="blog-more-btn" href="https://gonzaleslawoffices.com/blog/" target="_blank" rel="noopener">View Full Blog at GonzalesLawOffices.com →</a>
+
+  </div><!-- /blog-section -->
+
+  <script>
+  (function() {
+    // ── Category filter logic ──
+    const filters = document.querySelectorAll('.blog-filter-btn');
+    const cards = document.querySelectorAll('#blog-list .blog-card');
+    const countEl = document.getElementById('blog-visible-count');
+    const showMoreBtn = document.getElementById('blog-show-more');
+    let currentCat = 'All';
+    let showAll = false;
+    const INITIAL_SHOW = 6;
+
+    function applyFilter() {
+      let visible = 0;
+      let total = 0;
+      cards.forEach(card => {
+        const cat = card.dataset.cat;
+        const matches = currentCat === 'All' || cat === currentCat;
+        if (matches) {
+          total++;
+          if (showAll || visible < INITIAL_SHOW) {
+            card.classList.remove('hidden');
+            visible++;
+          } else {
+            card.classList.add('hidden');
+          }
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+      if (countEl) countEl.textContent = showAll ? total : Math.min(visible, total);
+      if (showMoreBtn) {
+        const remaining = total - (showAll ? total : Math.min(INITIAL_SHOW, total));
+        if (remaining > 0 && !showAll) {
+          showMoreBtn.style.display = 'block';
+          showMoreBtn.textContent = `Show ${remaining} More Articles ↓`;
+        } else {
+          showMoreBtn.style.display = 'none';
+        }
+      }
+    }
+
+    filters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filters.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCat = btn.dataset.cat;
+        showAll = false;
+        applyFilter();
+      });
+    });
+
+    if (showMoreBtn) {
+      showMoreBtn.addEventListener('click', () => {
+        showAll = true;
+        applyFilter();
+      });
+    }
+
+    applyFilter();
+  })();
+  </script>
 
   <footer>
     © 2026 Gonzales Law Offices, P.C. · Fontana, CA<br/>
