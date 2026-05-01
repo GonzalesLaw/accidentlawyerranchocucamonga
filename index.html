@@ -2579,15 +2579,41 @@
     </a>
   </div>
 
-  <!-- ═══ IndexNow — ping Bing, Yandex, Seznam, Naver on first visit ═══ -->
+  <!-- ═══ IndexNow — ping all engines on first visit (24h throttle) ═══ -->
   <script>
     (function(){
-      var k='gonzaleslaw2026indexnow', u='https://links.gonzaleslawoffices.com/';
-      // Ping Bing IndexNow (also relays to Yandex, Seznam, Naver)
-      if(!sessionStorage.getItem('inPinged')){
-        fetch('https://api.indexnow.org/IndexNow?url='+encodeURIComponent(u)+'&key='+k,{mode:'no-cors'}).catch(function(){});
-        sessionStorage.setItem('inPinged','1');
-      }
+      var k = 'gonzaleslaw2026indexnow';
+      var u = 'https://links.gonzaleslawoffices.com/';
+      var now = Date.now();
+      var last = parseInt(localStorage.getItem('inPingedAt') || '0', 10);
+      // Throttle: once per 24 hours per browser
+      if (now - last < 86400000) return;
+      localStorage.setItem('inPingedAt', now);
+
+      var urls = [
+        u,
+        u + 'llms.txt',
+        u + 'sitemap.xml'
+      ];
+
+      // api.indexnow.org — relays to Bing, Yandex, Seznam, Naver automatically
+      fetch('https://api.indexnow.org/IndexNow', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json; charset=utf-8' },
+        body: JSON.stringify({
+          host: 'links.gonzaleslawoffices.com',
+          key: k,
+          keyLocation: u + k + '.txt',
+          urlList: urls
+        })
+      }).catch(function(){});
+
+      // Bing direct backup
+      fetch('https://www.bing.com/indexnow?url=' + encodeURIComponent(u) + '&key=' + k, { mode: 'no-cors' }).catch(function(){});
+
+      // Yandex direct backup
+      fetch('https://yandex.com/indexnow?url=' + encodeURIComponent(u) + '&key=' + k, { mode: 'no-cors' }).catch(function(){});
     })();
   </script>
 
